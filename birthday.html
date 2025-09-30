@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Include Tailwind CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Link Css -->
+    <link rel="stylesheet" href="./dist/styles.css" />
+    <!-- Locomotive Scroll -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+    <title>HBD AYA!</title>
+  </head>
+  <body class="bg-gray-100">
+  <div class="music/hbd">
+    <audio controls autoplay loop>
+      <source 
+	  src="./music/hbd.mp3">
+type="audio/mp3"
+/>	  
+	   </source>
+    </audio>
+    <div class="mx-auto p-4" data-scroll-container>
+      <!-- hero / top section -->
+      <div
+        class="py-5 max-w-full max-h-full grid place-items-center"
+        data-scroll-section
+      >
+        <h2
+          class="text-5xl lg:text-4xl leading-3 p-2"
+          data-scroll
+          data-scroll-speed="4"
+          data-scroll-position="top"
+        >
+          HALLO WORD!!!
+        </h2>
+        <p
+          class="text-lg lg:text-3xl"
+          data-scroll
+          data-scroll-speed="-4"
+          data-scroll-direction="horizontal"
+        >
+          Please Scroll Down
+        </p>
+      </div>
+      <!-- stick pic gallery -->
+      <div
+        id="gallery"
+        class="grid grid-flow-col grid-col-1 gap-1"
+        data-scroll-section
+      >
+        <div class="w-full grid grid-cols-1">
+          <img
+            src="./image/1.png"
+            alt=""
+            class="w-full h-auto object-cover"
+            data-scroll
+            data-scroll-direction="vaertical"
+            data-scroll-speed="20"
+            data-scroll-position="top"
+          />
+          <img
+            src="./image/2.png"
+            alt=""
+            class="w-full h-auto object-cover"
+            data-scroll
+            data-scroll-direction="horizontal"
+            data-scroll-speed="25"
+          />
+          <img
+            src="./image/3.png"
+            alt=""
+            class="w-full h-auto object-cover"
+            data-scroll
+            data-scroll-direction="horizontal"
+            data-scroll-speed="-20"
+            data-scroll-delay="0.95"
+          />
+          <img src="./image/4.png" alt="" class="w-full h-auto object-cover" />
+        </div>
+        <div class="w-full lg:w-auto">
+          <img
+            src="./image/5.png"
+            alt=""
+            class="w-full h-auto object-cover"
+            data-scroll
+            data-scroll-sticky
+            data-scroll-target="#gallery"
+            data-scroll-speed="1.2"
+          />
+        </div>
+      </div>
+	
+      <div
+        id="threeD"
+        class="w-full lg:h-screen lg:flex lg:flex-col lg:items-center lg:justify-center mt-10"
+        data-scroll-section
+      >
+        <div class="transform -skew-x-15 rotate-6 mb-2">
+          <h2
+            class="bg-purple-600 text-white text-center font-semibold py-4 px-4 lg:py-2 lg:px-60 text-lg lg:text-3xl mb-"
+            data-scroll
+            data-scroll-direction="horizontal"
+            data-scroll-speed="20"
+            data-scroll-target="#threeD"
+          >
+            HAPPY BIRTHDAY 🎂</h2>
+        </div>
+        <h2 class="text-4xl lg:text-7xl font-bold my-4 lg:my-0 text-center">
+          <span
+            class="inline-block"
+            data-scroll
+            data-scroll-repeat
+            data-scroll-speed="5"
+            >E</span
+          >
+          <span
+            class="inline-block"
+            data-scroll
+            data-scroll-repeat
+            data-scroll-speed="2"
+            >S</span
+          >
+          <span
+            class="inline-block"
+            data-scroll
+            data-scroll-repeat
+            data-scroll-speed="3"
+            >T</span
+          >
+          <span
+            class="inline-block"
+            data-scroll
+            data-scroll-repeat
+            data-scroll-speed="5"
+            >U</span
+          >
+          <span
+            class="inline-block"
+            data-scroll
+            data-scroll-repeat
+            data-scroll-speed="2"
+            >M</span
+          >
+          <span
+            class="inline-block"
+            data-scroll
+            data-scroll-repeat
+            data-scroll-speed="4"
+            >A</span
+          >
+          <span
+            class="inline-block"
+            data-scroll
+            data-scroll-repeat
+            data-scroll-speed="5"
+            >U</span
+			>
+			<span
+            class="inline-block"
+            data-scroll
+            data-scroll-repeat
+            data-scroll-speed="4"
+            >L</span
+          >
+          <span
+            class="inline-block"
+            data-scroll
+            data-scroll-repeat
+            data-scroll-speed="2"
+            >AA</span
+          >
+          <span
+            class="inline-block"
+            data-scroll
+            data-scroll-repeat
+            data-scroll-speed="3"
+            >Y</span
+          >
+          <span
+            class="inline-block"
+            data-scroll
+            data-scroll-repeat
+            data-scroll-speed="2"
+            >A</span
+          >
+          <span
+            class="inline-block"
+            data-scroll
+            data-scroll-repeat
+            data-scroll-speed="4"
+            >T</span
+          >
+          <span
+            class="inline-block"
+            data-scroll
+            data-scroll-repeat
+            data-scroll-speed="5"
+            >I</span
+          >
+        </h2>
+
+        <div class="transform -skew-x-15 -rotate-6 mt-2">
+          <h2
+            class="bg-purple-600 text-center text-white font-semibold py-4 px-4 lg:py-2 lg:px-60 text-lg lg:text-3xl mb-"
+            data-scroll
+            data-scroll-direction="horizontal"
+            data-scroll-speed="-20"
+            data-scroll-target="#threeD"
+          >
+            HAPPY BIRTHDAY 🎂</h2>
+        </div>
+      </div>
+	  
+<div
+  class="text-3xl text-center flex justify-center items-center p-8 text-black-700 font-bold"
+  data-scroll-section
+>
+  <h2 data-scroll data-scroll-repeat>
+    <span data-scroll data-scroll-delay="0.25" data-scroll-speed="3">
+      Hari ini adalah hari spesial yang menandai babak baru dalam hidupmu. Usia yang bertambah bukan hanya tentang angka, tapi tentang bertambahnya pengalaman, pembelajaran serta momen berharga yang menjadikanmu semakin dewasa.<br/>
+    </span>
+  </h2>
+</div>	  
+
+<div
+  class="text-3xl text-center flex justify-center items-center p-8 text-black-700 font-bold"
+  data-scroll-section
+>
+  <h2 data-scroll data-scroll-repeat>
+    <span data-scroll data-scroll-delay="0.25" data-scroll-speed="3">
+      Semoga di usia baru ini kamu selalu dikelilingi penuh cinta, kehangatan, dan orang-orang baik yang selalu mendukungmu dalam segala kebaikan. Jangan takut bermimpi lebih besar, karena kamu punya segala potensi untuk mewujudkannya. Hidup mungkin tidak selalu mudah, tapi setiap langkah kecilmu adalah bagian penting dari perjalanan besar menuju masa depanmu yang gemilang 🎉✨<br/>
+    </span>
+  </h2>
+</div>	  
+      
+<div
+  class="text-3xl text-center flex justify-center items-center p-8 text-black-700 font-bold"
+  data-scroll-section
+>
+  <h2 data-scroll data-scroll-repeat>
+    <span data-scroll data-scroll-delay="0.25" data-scroll-speed="3">
+      Semoga juga lekas sembuh dari segala penyakit fisik maupun mental, agar kamu bisa menjalani hari-hari dengan hati yang lebih tenang dan tubuh yang lebih kuat. Biarkan setiap kegagalan menjadi pelajaran, setiap keberhasilan menjadi motivasi, dan setiap harapan menjadi energi untuk terus melangkah maju. Nikmati setiap detik hari ini dengan rasa syukur, tawa, dan kebahagiaan tanpa batas, karena kamu pantas mendapatkannya. Teruslah bersinar dengan caramu sendiri, sebab dunia membutuhkan cahaya yang kamu bawa 🌸💫
+    </span>
+  </h2>
+</div>
+
+      <div
+        class="text-4xl text-center flex justify-center items-center p-8"
+        data-scroll-section
+      >
+        <h2 data scroll data-scroll-repeat>
+          <span data-scroll data-scroll-delay="0.22" data-scroll-speed="2"
+            >🤲 آمِيـن يَا رَبَّ الْعَالَمِيْن 🤲</span
+          >
+          <span data-scroll data-scroll-delay="0.20" data-scroll-speed="3"
+            ></span
+          >
+          <span data-scroll data-scroll-delay="0.18" data-scroll-speed="4"
+            ></span
+          >
+          <span data-scroll data-scroll-delay="0.16" data-scroll-speed="5"
+            ></span
+          >
+          <span data-scroll data-scroll-delay="0.14" data-scroll-speed="2"
+            ></span
+          >
+          <span data-scroll data-scroll-delay="0.12" data-scroll-speed="3"
+            ></span
+          >
+          <span data-scroll data-scroll-delay="0.095" data-scroll-speed="4"
+            ></span
+          >
+          <span data-scroll data-scroll-delay="0.085" data-scroll-speed="5"
+            ></span
+          >
+          <span data-scroll data-scroll-delay="0.075" data-scroll-speed="2"
+            ></span
+          >
+          <span data-scroll data-scroll-delay="0.065" data-scroll-speed="3"
+            ></span
+          >
+          <span data-scroll data-scroll-delay="0.045" data-scroll-speed="4"
+            ></span
+          >
+          <span data-scroll data-scroll-delay="0.035" data-scroll-speed="5"
+            ></span
+          >
+          <span data-scroll data-scroll-delay="0.030" data-scroll-speed="2"
+            ></span
+          >
+        </h2>
+      </div>
+      <footer
+        class="w-full h-12 bg-purple-500 flex justify-center items-center"
+        data-scroll-section
+      >
+	  <p class="text-base" data-scroll="" data-scroll-speed="4" data-scroll-position="bottom"> ❤️ By = Ulah pada kepo euy! ❤️ </p>
+        </footer>
+          class="text-base"
+          data-scroll
+          data-scroll-speed="4"
+          data-scroll-position="bottom"
+        >
+          
+        </p>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="./dist/script.js"></script>
+  
+<!-- Confetti JS -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+<script>
+  function fireConfetti() {
+    var duration = 700 * 1000; // 700 detik
+    var end = Date.now() + duration;
+
+    (function frame() {
+      confetti({
+        particleCount: 5,
+        angle: 60,
+        spread: 55,
+        origin: { x: 0 }
+      });
+      confetti({
+        particleCount: 5,
+        angle: 120,
+        spread: 55,
+        origin: { x: 1 }
+      });
+
+      if (Date.now() < end) {
+        requestAnimationFrame(frame);
+      }
+    })();
+  }
+
+  window.onload = fireConfetti;
+</script>
+</body>
+</html>
